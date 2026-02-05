@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "PNEUMA",
+    "slug": "pneuma",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "pneuma",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E27"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aetherlink.pneuma",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "PNEUMA uses HealthKit to read heart rate, HRV, and SpO2 data for real-time biometric feedback during breathing sessions.",
+        "NSHealthUpdateUsageDescription": "PNEUMA records your breathing session data to HealthKit for tracking wellness progress."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E27"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.aetherlink.pneuma",
+      "permissions": [
+        "android.permission.BODY_SENSORS",
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.health.READ_HEART_RATE",
+        "android.permission.health.READ_HEART_RATE_VARIABILITY"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-haptics"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "pneuma-breathwork"
+      }
+    }
+  }
+}
