@@ -10,7 +10,10 @@
 
 ### Next-Generation Intelligence Platform
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMaca2024%2FO2-OMEGA)
+
 [![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2997ff?style=for-the-badge&logo=github)](https://maca2024.github.io/O2-OMEGA/)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMaca2024%2FO2-OMEGA)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -544,6 +547,29 @@ actions/deploy-pages@v4
        |
        v
 Site live op https://maca2024.github.io/O2-OMEGA/
+```
+
+### Vercel (One-Click Deploy)
+
+De snelste manier om te deployen naar Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMaca2024%2FO2-OMEGA)
+
+**Of handmatig:**
+
+1. Ga naar [vercel.com](https://vercel.com) en log in
+2. Klik **"Add New Project"**
+3. Importeer de `Maca2024/O2-OMEGA` repository
+4. Klik **Deploy** - geen configuratie nodig (`vercel.json` is al inbegrepen)
+5. Je site is live op `o2-omega.vercel.app` (of een aangepast domein)
+
+```
+vercel.json configuratie:
++-- Naam: o2-omega
++-- Framework: None (statisch)
++-- Output: . (root directory)
++-- Security headers: X-Content-Type-Options, X-Frame-Options, X-XSS-Protection
++-- Caching: 1 jaar voor CSS, JS, en assets
 ```
 
 ### Alternatieve hosting
